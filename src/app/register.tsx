@@ -2,10 +2,21 @@ import { Button } from '@/components/button';
 import { Input } from '@/components/input';
 import { colors } from '@/styles/colors';
 import { FontAwesome6, MaterialIcons } from '@expo/vector-icons';
-import { Link } from 'expo-router';
-import { Image, StatusBar, View } from 'react-native';
+import { Link, router } from 'expo-router';
+import { useState } from 'react';
+import { Alert, Image, StatusBar, View } from 'react-native';
 
 export default function Register() {
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+
+    function handeRegister() {
+        if (!name.trim() || !email.trim()) {
+            return Alert.alert("Inscrição", "Preencha todos os campos!")
+        }
+
+        router.push('/ticket')
+    }
     return (
         <View className='items-center justify-center flex-1 p-8 bg-green-500'>
             <StatusBar barStyle='light-content' />
@@ -21,6 +32,7 @@ export default function Register() {
                     <Input.Field
                         placeholder='Nome completo'
                         keyboardType='default'
+                        onChangeText={setName}
                     />
                 </Input>
                 <Input>
@@ -28,6 +40,7 @@ export default function Register() {
                     <Input.Field
                         placeholder='E-mail'
                         keyboardType='email-address'
+                        onChangeText={setEmail}
                     />
                 </Input>
 
@@ -35,6 +48,7 @@ export default function Register() {
                 <Button
                     title='Validar ingresso'
                     isLoading={false}
+                    onPress={handeRegister}
                 />
 
                 <Link
