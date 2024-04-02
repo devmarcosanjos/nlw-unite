@@ -29,6 +29,7 @@ export default function Home() {
                     isLoading={false}
                 />
 
+
                 <Link
                     href='/register'
                     className='mt-8 text-base font-bold text-center text-gray-100'
