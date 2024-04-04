@@ -10,7 +10,7 @@
 
 ## Descrição
 
-O Ignite Teams é um projeto desenvolvido durante a NLW. Ele oferece uma aplicativo para cadastro em um evento com seu ticket exclusivo. O APP conta com funcionalidades de cadastro no evento, visualização do ticket excluso e qr para autenticação do usuário no evento, link para compartilhamento do ticket do evento.
+O APP-UNITE é um projeto desenvolvido durante a NLW. Ele oferece uma aplicativo para cadastro em um evento com seu ticket exclusivo. O APP conta com funcionalidades de cadastro no evento, visualização do ticket excluso e qr para autenticação do usuário no evento, link para compartilhamento do ticket do evento.
 
 ## Funcionalidades 🛠️
 
