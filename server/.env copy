@@ -1,0 +1,5 @@
+// Dados de EX Pota 3333
+
+DATABASE_URL="file:./db.sqlite"
+API_BASE_URL="http://localhost:XXXX"
+PORT=XXXX
